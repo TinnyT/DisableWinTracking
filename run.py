@@ -134,7 +134,7 @@ class WinFrame(wx.Frame):
                 print "Couldn't stop DiagTrack service. Deleted, or is the program not elevated?"
 
             try:
-                open(self.logfile).close()  # Clear the AutoLogger file
+                open(self.logfile, 'w').close()  # Clear the AutoLogger file
                 subprocess.Popen(
                     ["echo", "y|cacls", self.logfile, "/d", "SYSTEM"],
                     shell=True)  # Prevent modification to file
