@@ -178,7 +178,12 @@ class WinFrame(wx.Frame):
                             'corpext.msitadfs.glbdns2.microsoft.com', 'services.wes.df.telemetry.microsoft.com',
                             'watson.telemetry.microsoft.com.nsatc.net', 'statsfe2.update.microsoft.com.akadns.net',
                             'i1.services.social.microsoft.com.nsatc.net',
-                            'telecommand.telemetry.microsoft.com.nsatc.net']
+                            'telecommand.telemetry.microsoft.com.nsatc.net', 'onesettings-db5.metron.live.nsatc.net',
+                            'www.go.microsoft.akadns.net', 'a1961.g.akamai.net', 'a1621.g.akamai.net', 'a248.e.akamai.net',
+                            'a1856.g2.akamai.net', 'e7341.g.akamaiedge.net', 'e7502.ce.akamaiedge.net', 'e8218.ce.akamaiedge.net',
+                            'e2835.dspb.akamaiedge.net', 'h2.msn.com', 'hostedocsp.globalsign.com', 'bingads.microsoft.com',
+                            'www.bingads.microsoft.com', 'ipv6.msftncsi.com.edgesuite.net', 'ipv6.msftncsi.com', 'win10.ipv6.microsoft.com',
+                            'a978.i6g1.akamai.net', 'any.edge.bing.com']
             self.IP = '0.0.0.0 '
             self.MSHosts2 = [self.IP + x for x in self.MSHosts]
             self.hostslocation = os.path.join(os.environ['SYSTEMROOT'], 'System32\\drivers\\etc\\hosts')
