@@ -190,7 +190,7 @@ class WinFrame(wx.Frame):
 
             try:
                 with open(self.hostslocation, 'ab') as f:
-                    f.write('\n' + '\n'.join(self.MSHosts2))
+                    f.write('\r\n' + '\r\n'.join(self.MSHosts2))
                 print "Domains successfully appended to HOSTS file."
             except WindowsError:
                 print "Could not access HOSTS file. Is the program not elevated?"
